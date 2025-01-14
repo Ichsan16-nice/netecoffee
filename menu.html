@@ -1029,7 +1029,7 @@ function totalMoney(checkLogin){
     }
 
   }
-  document.getElementById("total_money").innerHTML ="Rp."+total_order;
+  document.getElementById("total_money").innerHTML ="Rp"+total_order;
         
 }
 
@@ -1193,7 +1193,7 @@ totalMoney(checkLogin);
         </div>
       </div> </td>
       <td class="text-center"><input id="quality_input_change`+i+`" onchange ="upQuality(`+orderFood[i].id_order+`)" class="cart_input_quanlity mt-2" type="number" value="`+orderFood[i].quanlity_order+`" name="" min="1" max="20" style=""> </td>
-      <td class="text-center"><p class="mt-2" style="padding:5px;">Rp.`+orderFood[i].price_order *orderFood[i].quanlity_order+`</p></td>
+      <td class="text-center"><p class="mt-2" style="padding:5px;">Rp`+orderFood[i].price_order *orderFood[i].quanlity_order+`</p></td>
       <td class="text-center"><div onclick="delete_order(`+orderFood[i].id_order+`)" class="cart_button_delete"><i class="fa fa-trash" aria-hidden="true" style="color: #d7b98e;font-size: 180%; cursor:pointer;"></i></div> </td>
     </tr>`
     document.getElementById("prinf_order_cart").innerHTML +=prinf_order_cart;
@@ -1326,7 +1326,7 @@ var food =JSON.parse(localStorage.getItem('food'));
 					<img src="`+food[i].image+`" width="200px" height="250px" style="">
 				</div>
 				<div class="info_box p-3 bg-white">
-					<p class="float-left font-weight-bold mb-0" style="font-size: 115%">`+food[i].name+`</p><p class="float-right font-weight-bold mb-2" style="font-size: 110%">Rp.`+food[i].price+`</p>
+					<p class="float-left font-weight-bold mb-0" style="font-size: 115%">`+food[i].name+`</p><p class="float-right font-weight-bold mb-2" style="font-size: 110%">Rp`+food[i].price+`</p>
 					<div style="clear: both;"></div>
 					
 					<p style="font-size: 100%;height:35px;">`+food[i].note+`</p> 
